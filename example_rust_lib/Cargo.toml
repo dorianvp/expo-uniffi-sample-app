@@ -1,0 +1,18 @@
+[package]
+name = "example-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+uniffi = { version = "0.27" }
+
+[build-dependencies]
+uniffi = { version = "0.27", features = [ "build" ] }
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+name = "example_rust"
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "uniffi-bindgen.rs"

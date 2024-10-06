@@ -1,0 +1,4 @@
+namespace example_lib {
+	u32 add(u32 a, u32 b);
+	void say_hello();
+};
